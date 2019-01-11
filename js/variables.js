@@ -82,7 +82,7 @@ console.log(johnOlder)
 
 //Typeof operator
 console.log(typeof johnOlder);
-
+console.log(typeof ageJohn);
 
 
 
