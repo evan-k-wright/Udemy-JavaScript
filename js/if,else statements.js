@@ -19,18 +19,17 @@ if (isMarried) {
 }
 
 
-var johnWeight = 99; //kg
+var johnMass = 99; //kg
 var johnHight = 1.5; //meters
 
-var markWeight = 79;
+var markMass = 79;
 var markHight = 1.8;
 
-var johnBMI = johnWeight / (johnHight * johnHight);
-var markBMI = markWeight / (markHight * markHight);
-console.log(johnBMI, markBMI)
+var johnBMI = johnMass / (johnHight * johnHight);
+var markBMI = markMass / (markHight * markHight);
 
-var johnBMI = 44;
-var markBMI = 24.4;
-
-var markHigherBMI = markBMI > johnBMI;
-console.log('Is Marks\'s BMK hight than Jons\'? ' + markHigherBMI);
+if (markBMI > johnBMI) {
+    console.log('Mark\'s BMI is hight than John\'s')
+} else { 
+    console.log('John\'s BMI is hight than Mark\'s')
+}
