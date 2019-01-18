@@ -80,5 +80,3 @@ var markBMI = 24.4;
 
 var markHigherBMI = markBMI > johnBMI;
 console.log('Is Marks\'s BMK hight than Jons\'? ' + markHigherBMI);
-
-
