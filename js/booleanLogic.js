@@ -16,11 +16,13 @@
  }
 
 
-var car = 'Mazda'
-var Mazda = 'red'
+ 
 
-if (car == "Mazda") {
-    console.log(car + ' goes outside.');
-} else { 
-    console.log(car + ' goes inside gradge.')
-} 
+// var car = 'Mazda'
+// var Mazda = 'red'
+
+// if (car == "Mazda") {
+//     console.log(car + ' goes outside.');
+// } else { 
+//     console.log(car + ' goes inside gradge.')
+// } 
