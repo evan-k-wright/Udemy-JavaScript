@@ -81,7 +81,7 @@
     // var markHigherBMI = markBMI > johnBMI;
     // console.log('Is Marks\'s BMK hight than Jons\'? ' + markHigherBMI);
 
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /*
     Variables and data types
@@ -219,40 +219,40 @@
 
 
 //switch statement
-    var firstName = 'Evan'
-    var job = 'qa';
-    switch(job) {
-        case 'teacher':
-        case 'instructor':
-            console.log(firstName + ' teaches kids how to code.');
-            break;
-        case 'driver':
-            console.log(firstName + ' drives an Uber in Lisbon.');
-            break;
-        case 'designer':
-            console.log(firstName + ' designs beautiful websites.')
-            break;
-        case 'qa':
-            console.log(firstName + ' does QA for Canvass.com.')
-            break;
-        default:
-            console.log(firstName + ' does something else.');
-    }
+    // var firstName = 'Evan'
+    // var job = 'qa';
+    // switch(job) {
+    //     case 'teacher':
+    //     case 'instructor':
+    //         console.log(firstName + ' teaches kids how to code.');
+    //         break;
+    //     case 'driver':
+    //         console.log(firstName + ' drives an Uber in Lisbon.');
+    //         break;
+    //     case 'designer':
+    //         console.log(firstName + ' designs beautiful websites.')
+    //         break;
+    //     case 'qa':
+    //         console.log(firstName + ' does QA for Canvass.com.')
+    //         break;
+    //     default:
+    //         console.log(firstName + ' does something else.');
+    // }
 
-    var age = 26
-    switch (true) {
-        case age < 13:
-            console.log(firstName + ' is a boy.');
-            break;
-        case age >= 13 && age < 20:
-            console.log(firstName + ' is a teenager.');
-            break;
-        case age >= 20 && age < 30:
-            console.log(firstName + ' is a young man.');
-            break;
-        default:
-            console.log(firstName + ' is a man.');
-    }
+    // var age = 26
+    // switch (true) {
+    //     case age < 13:
+    //         console.log(firstName + ' is a boy.');
+    //         break;
+    //     case age >= 13 && age < 20:
+    //         console.log(firstName + ' is a teenager.');
+    //         break;
+    //     case age >= 20 && age < 30:
+    //         console.log(firstName + ' is a young man.');
+    //         break;
+    //     default:
+    //         console.log(firstName + ' is a man.');
+    // }
 
 
 
@@ -267,3 +267,104 @@
 
 
 
+/*
+    Truthy and Falsy values and equality operatores
+*/
+
+    // falsy values: undifined, null, 0, " ", and NaN
+    // truthy values: NOT falsy 
+
+    //     var hight;
+
+    //     hight = 23;
+
+    //     if (hight || hight === 0) {
+    //         console.log('Variable is defined');
+    //     } else {
+    //         console.log('Variable has NOT been defined')
+    //     }
+
+    // // Equality operators
+    //     if (hight === '23') {
+    //         console.log('The == operator does type corecion!');
+    //     }
+
+
+
+/*
+    Coding Challange 2
+*/
+
+        // var johnsGame1 = 24;
+        // var johnsGame2 = 12;
+        // var johnsGame3 = 96;
+
+        // var mikesGame1 = 11;
+        // var mikesGame2 = 50;
+        // var mikesGame3 = 140;
+
+        // console.log('Total of all three games for Johns team is ' + (johnsGame1 + johnsGame2 + johnsGame3))
+        // console.log('Total of all three games for Mikes team is ' + (mikesGame1 + mikesGame2 + mikesGame3))
+
+        // var johnTotal = 132
+        // var mikeTotal = 201
+
+        // console.log(johnTotal / 3 + ' is the avrage score')
+        // console.log(mikeTotal / 3 + ' is the avrage score. Mike has the highest average score.')
+
+
+    //Solution 
+        // var scoreJohn = (89 + 120 + 103) / 3;
+        // var scoreMike = (116 + 94 + 123) / 3; 
+        // var scoreMary = (97 + 134 + 105) / 3;
+        // console.log(scoreJohn, scoreMike, scoreMary);
+
+        // if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
+        //     console.log('John\'s team wins with ' + scoreJohn + ' points.');
+        // } else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
+        //     console.log('Mike\'s team wins with ' + scoreMike + ' points.');
+        // } else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
+        //     console.log('Mary\'s team wins with ' + scoreMary + ' points.');
+        // } else {
+        //     console.log('There is a draw.');
+        // }
+
+
+        /*if (scoreJohn > scoreMike) {
+            console.log('John\'s team wins with ' + scoreJohn + ' points.');
+        } else if (scoreMike > scoreJohn) {
+            console.log('Mike\'s team wins with ' + scoreMike + ' points.');
+        } else {
+            console.log('There is a draw');
+        }*/
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/* 
+    Functions
+*/
+
+    function calculateAge(birthYear){
+        return 2018 - birthYear;
+    }
+
+    var ageJoe = calculateAge(1990);
+    var ageMike = calculateAge(1948);
+    var ageJane = calculateAge(1969);
+    console.log(ageJoe, ageMike, ageJane)
+
+
+    function yearsUntilRetierment(year, firstname) {
+        var age = calculateAge(year);
+        var retirement = 65 - age;
+
+        if (retirement > 0){
+        console.log(firstname + ' retires in ' + retirement + ' years.');
+        } else {
+            console.log(firstname + ' is already retired.')
+        }
+    }
+
+    yearsUntilRetierment(1990, 'Joe')
+    yearsUntilRetierment(1948, 'Mike')
+    yearsUntilRetierment(1969, 'Jane')
