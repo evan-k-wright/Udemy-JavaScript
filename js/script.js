@@ -344,27 +344,85 @@
     Functions
 */
 
-    function calculateAge(birthYear){
-        return 2018 - birthYear;
-    }
+    // function calculateAge(birthYear){
+    //     return 2018 - birthYear;
+    // }
 
-    var ageJoe = calculateAge(1990);
-    var ageMike = calculateAge(1948);
-    var ageJane = calculateAge(1969);
-    console.log(ageJoe, ageMike, ageJane)
+    // var ageJoe = calculateAge(1990);
+    // var ageMike = calculateAge(1948);
+    // var ageJane = calculateAge(1969);
+    // console.log(ageJoe, ageMike, ageJane)
 
 
-    function yearsUntilRetierment(year, firstname) {
-        var age = calculateAge(year);
-        var retirement = 65 - age;
+    // function yearsUntilRetierment(year, firstname) {
+    //     var age = calculateAge(year);
+    //     var retirement = 65 - age;
 
-        if (retirement > 0){
-        console.log(firstname + ' retires in ' + retirement + ' years.');
-        } else {
-            console.log(firstname + ' is already retired.')
-        }
-    }
+    //     if (retirement > 0){
+    //     console.log(firstname + ' retires in ' + retirement + ' years.');
+    //     } else {
+    //         console.log(firstname + ' is already retired.')
+    //     }
+    // }
 
-    yearsUntilRetierment(1990, 'Joe')
-    yearsUntilRetierment(1948, 'Mike')
-    yearsUntilRetierment(1969, 'Jane')
+    // yearsUntilRetierment(1990, 'Joe')
+    // yearsUntilRetierment(1948, 'Mike')
+    // yearsUntilRetierment(1969, 'Jane')
+
+
+/*
+    Function Statements and Expressions
+*/
+    //Function declaration
+        //function whatDoYouDo(job, firstName){}
+
+    //Functioin expresstoin     
+        // var whatDoYouDo = function(job, firstName) {
+        //     switch(job) { 
+        //         case 'teacher':
+        //             return firstName + ' teaches kids how to code.';
+        //         case 'driver':
+        //             return firstName + ' drives an Uber.';
+        //         case 'designer':
+        //             return firstName + ' designes awesome iOS apps.';
+        //         default:
+        //             return firstName + ' does something else.';
+        //     }
+        // }
+
+        // console.log(whatDoYouDo('teacher', 'John'))
+        // console.log(whatDoYouDo('designer', 'Jane'))
+        // console.log(whatDoYouDo('retired', 'Mark'))
+
+
+/*
+    Arrys
+*/
+        // initialize new array
+            var names = ['John', 'Mark', 'Jane'];
+            var years = new Array(1990, 1969, 1948);
+
+            console.log(names[2]);
+            console.log(names.length);
+
+        // mutate array data
+            names[1] = 'Ben';
+            names[names.length] = 'Mary';
+            console.log(names);
+
+        // different data types
+            var john = ['John', 'Smith', 1990, 'teacher', 'false'];
+
+            john.push('blue');
+            
+            console.log(john);
+        
+
+
+
+
+
+
+
+
+
